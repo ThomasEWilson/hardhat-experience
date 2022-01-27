@@ -2,13 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 export default function Footer() {
-  return (
-    <Container>
-      <Link href={'https://twitter.com/benjaminakar'}>
-        Made by Benjamin Akar
-      </Link>
-    </Container>
-  );
+  return (<></>);
 }
 
 const Container = styled.div`
