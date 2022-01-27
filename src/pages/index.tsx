@@ -27,6 +27,7 @@ export default function Landing() {
   // });
 
   return (
+    <Big>
     <Container>
         <div className="dataContainer">
           <div className="header">
@@ -44,8 +45,17 @@ export default function Landing() {
           </button>
         </div>
     </Container>
+    </Big>
   );
 }
+const Big = styled.section`
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background:linear-gradient(45deg, #dc3b3e, #3b99dc 50%, #3bdc90 75%, rgb(255 141 0) 100%);
+`
 
 const Container = styled.div`
   display: flex;
@@ -53,6 +63,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
+
 
   .dataContainer {
     display: flex;
@@ -69,7 +80,6 @@ const Container = styled.div`
   
   .bio {
     text-align: center;
-    color: gray;
     margin-top: 16px;
   }
   
